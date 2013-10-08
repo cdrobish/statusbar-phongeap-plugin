@@ -75,8 +75,8 @@
 
 	self.callbackId = command.callbackId;
   
-  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:NO];
-  [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+  [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:YES];
+  //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
   
 	pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
